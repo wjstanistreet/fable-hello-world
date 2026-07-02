@@ -3,9 +3,12 @@ scalaVersion := "3.8.4"
 lazy val root = rootProject
   .settings(
     name := "fable-hello-world",
+    scalacOptions ++= Seq("-deprecation", "-feature"),
     libraryDependencies ++= Seq(
-      //You can add library dependencies here, for example,
-      //"org.scalatest" %% "scalatest" % "3.2.19" % Test,
-      //"org.scalameta" %% "munit" % "1.2.3" % Test
-    )
+      "org.scalameta" %% "munit" % "1.2.3" % Test
+    ),
+    // Run in the terminal that launched sbt, so the animation gets a real console.
+    run / fork := true,
+    run / connectInput := true,
+    run / outputStrategy := Some(StdoutOutput)
   )
