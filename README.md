@@ -1,3 +1,9 @@
+# Testing Claude CLI
+
+This is a little entry project, testing Claude Fable 5, after getting to try the Claude CLI in a hackathon.
+
+I gave Claude a blank Scala project called hello-world and asked it to create an "impressive hello world," seeing how it would interpret the word 'impressive'. This is what it came up with:
+
 # fable-hello-world
 
 The most over-engineered "Hello, World!" this side of the JVM — and yet it has
